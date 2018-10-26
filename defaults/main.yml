@@ -1,0 +1,8 @@
+root_ca_base_dir: /etc/pki/ansible-root-ca
+root_ca_expiry_years: 20
+root_ca_common_name: Ansible Root CA
+root_ca_country: GB
+root_ca_city: London
+root_ca_state: Greater London
+root_ca_organization_name: Ansible Certificate Authority
+root_ca_organizational_unit_name: CA

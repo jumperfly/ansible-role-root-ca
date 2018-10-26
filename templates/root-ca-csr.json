@@ -1,0 +1,19 @@
+{
+  "CN": "{{ root_ca_common_name }}",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "{{ root_ca_country }}",
+      "L": "{{ root_ca_city }}",
+      "O": "{{ root_ca_organization_name }}",
+      "OU": "{{ root_ca_organizational_unit_name }}",
+      "ST": "{{ root_ca_state }}"
+    }
+  ],
+  "ca": {
+    "expiry": "{{ root_ca_expiry_years * 365 * 24}}h"
+  }
+}
