@@ -1,4 +1,4 @@
-root_ca_base_dir: /etc/pki/ansible-root-ca
+root_ca_base_dir: /etc/pki/ansible-ca
 root_ca_expiry_years: 20
 root_ca_common_name: Ansible Root CA
 root_ca_country: GB
