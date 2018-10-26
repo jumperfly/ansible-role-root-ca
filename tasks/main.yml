@@ -10,3 +10,8 @@
   args:
     chdir: "{{ root_ca_base_dir }}"
   when: not stat_result.stat.exists
+- name: Copy root CA cert to chain file
+  copy:
+    remote_src: yes
+    src: "{{ root_ca_base_dir }}/ca.pem"
+    dest: "{{ root_ca_base_dir }}/ca-chain.pem"
