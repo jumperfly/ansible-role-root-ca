@@ -1,1 +1,2 @@
-- jumperfly.cfssl
+- src: jumperfly.cfssl
+  version: v0.1.0
