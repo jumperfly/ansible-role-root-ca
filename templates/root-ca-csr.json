@@ -1,16 +1,16 @@
 {
-  "CN": "{{ root_ca_common_name }}",
+  "CN": "{{ root_ca_subject.common_name }}",
   "key": {
     "algo": "rsa",
     "size": 2048
   },
   "names": [
     {
-      "C": "{{ root_ca_country }}",
-      "L": "{{ root_ca_city }}",
-      "O": "{{ root_ca_organization_name }}",
-      "OU": "{{ root_ca_organizational_unit_name }}",
-      "ST": "{{ root_ca_state }}"
+      "C": "{{ root_ca_subject.country }}",
+      "L": "{{ root_ca_subject.city }}",
+      "O": "{{ root_ca_subject.organization_name }}",
+      "OU": "{{ root_ca_subject.organizational_unit_name }}",
+      "ST": "{{ root_ca_subject.state }}"
     }
   ],
   "ca": {
