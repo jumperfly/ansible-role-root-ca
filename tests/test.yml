@@ -1,6 +1,5 @@
 - hosts: all
   become: yes
-  environment:
-    PATH: /usr/local/bin:{{ ansible_env.PATH }}
   roles:
+  - jumperfly.cfssl
   - jumperfly.root_ca
